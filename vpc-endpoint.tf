@@ -47,7 +47,7 @@ resource "aws_vpc_endpoint_route_table_association" "public_s3" {
 ############################
 data "aws_vpc_endpoint_service" "dynamodb" {
   count = "${var.create_vpc && var.enable_dynamodb_endpoint ? 1 : 0}"
-
+  service_name = "dynamodb.us-east-2.amazonaws.com"
   service = "dynamodb"
 }
 
