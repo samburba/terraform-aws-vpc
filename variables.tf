@@ -1490,8 +1490,3 @@ variable "elasticache_outbound_acl_rules" {
     },
   ]
 }
-
-variable "dynamodb_service_name" {
-  description = "(Optional) the dynamodb service name"
-  default     = ""
-}
